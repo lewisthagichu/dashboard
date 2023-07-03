@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Inconsolata:wght@300&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-white: #ffffff;
+    --color-light: #f0eff5;
+    --color-gray-light: #7d8da1;
+    --color-gray-dark: #56555e;
+    --color-dark: #27282f;
+    --color-primary: rgb(71, 7, 234);
+    --color-success: rgb(34, 202, 75);
+    --color-danger: rgb(255, 67, 54);
+    --color-warning: rgb(234, 181, 7);
+    --color-purple: rgb(160, 99, 245);
+
+    --color-primary-light: rgba(71, 7, 234, 0.2);
+    --color-success-light: rgba(34, 202, 75, 0.2);
+    --color-danger-light: rgba(255, 67, 54, 0.2);
+    --color-purple-light: rgba(160, 99, 245, 0.2);
+
+    --card-padding: 1.6rem;
+    --padding-1: 1rem;
+    --padding-2: 8px;
+
+    --card-border-radius: 1.6rem;
+    --border-radius-1: 1rem;
+    --border-radius-2: 6px;
+}
+
+/* --------------DARK THEME-------------- */
+.dark-theme {
+    --color-white: #131316;
+    --color-light: #23232a;
+    --color-dark: #ddd;
+    --color-gray-dark: #adacb5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    appearance: none;
+    box-sizing: border-box;
+    letter-spacing: normal;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    user-select: none;
+    overflow-x: hidden;
+    background: var(--color-light);
+    font-family: poppins, sans-serif;
+    color: var(--color-dark);
+}
+
+img {
+    /* display: block; */
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+h5 {
+    font-size: 0.77rem;
+}
+
+p {
+    color: var(--color-gray-dark);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+.text-muted {
+    color: var(--color-gray-light);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.purple {
+    color: var(--color-purple);
+}
+
+.profile-photo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* ----------------------------NAV-------------------------------- */
+nav {
+    padding: 1rem 0;
+    background: var(--color-white);
+    width: 100%;
+}
+
+nav .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 0 auto;
+}
+
+nav .container .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav .container .logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+nav .container .search-bar {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 15%;
+    width: 32vw;
+    padding: var(--padding-2) var(--card-padding);
+    background: var(--color-light);
+    border-radius: var(--border-radius-2);
+    display: flex;
+    gap: 1rem;
+}
+
+nav .container .search-bar input[type="search"] {
+    background: transparent;
+    width: 100%;
+    color: var(--color-dark);
+}
+
+nav .container .search-bar input[type="search"]::placeholder {
+    color: var(--color-gray-dark);
+}
+
+nav .container .profile-area {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .container .profile-area .theme-btn {
+    background: var(--color-light);
+    border-radius: var(--border-radius-2);
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    color: var(--color-dark);
+}
+
+nav .profile-area .theme-btn span {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+nav .profile-area .theme-btn .active {
+    background: var(--color-dark);
+    color: var(--color-white);
+    border-radius: var(--border-radius-2);
+}
+
+nav .container .profile-area .notifications {
+    position: relative;
+}
+
+nav .container .profile-area .notifications span:not(.unread) {
+    color: var(--color-gray-light);
+}
+
+nav .container .profile-area .notifications .unread {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: red;
+    right: 2px;
+    top: 1px;
+}
+
+nav .container .profile-area .profile {
+    display: flex;
+    gap: 1rem;
+}
+
+nav .container .profile-area button {
+    display: none;
+}
