@@ -12,7 +12,7 @@
     <nav>
         <div class="container">
             <div class="logo">
-                <img src="img/logos.png">
+                <img src="img/logo.png">
                 <h2>IGN<span class="success">ITE</span></h2>
             </div>
             <div class="search-bar">
@@ -44,6 +44,223 @@
         </div>
     </nav>
     <!-- --------------END OF NAV----------------- -->
+    <main>
+        <aside>
+            <div class="close-btn">
+                <span class="material-icons-sharp">close</span>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">domain</span>
+                    <h3>Companies</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">work</span>
+                    <h3>Deals</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Contacts</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">note_alt</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Calender</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Message</h3>
+                    <span class="message">7</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">description</span>
+                    <h3>Documents</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ----------------END OF ASIDE---------------- -->
+        <section class="right">
+            <div class="top">
+                <div class="welcome">
+                    <h2>Hi Haley Greg</h2>
+                    <p class="text-muted">Welcome back to Ignite CRM dashboard</p>
+                </div>
+                <div class="widgets">
+                    <div class="download">
+                        <span class="material-icons-sharp">download</span>
+                        <p>Download</p>
+                    </div>
+                    <div class="dashlet">
+                        <span class="material-icons-sharp">add</span>
+                        <p>Add Dashlet</p>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+            <div class="cards">
+                <div class="card">
+                    <div class="top">
+                        <div class="amount">
+                            <h1>$24,657.70</h1>
+                            <p class="text-muted">Won from 16 deals</p>
+                        </div>
+                        <span class="material-icons-sharp">work</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <div class="bar"></div>
+                            </div>
+                            <p>70%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 1 -->
+                <div class="card">
+                    <div class="top">
+                        <div class="amount">
+                            <h1>$2, 094.50</h1>
+                            <p class="text-muted">Daily average income</p>
+                        </div>
+                        <span class="material-icons-sharp danger">account_balance_wallet</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <div class="bar income"></div>
+                            </div>
+                            <p>22%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 2 -->
+                <div class="card">
+                    <div class="top">
+                        <div class="amount">
+                            <h1>%50.98</h1>
+                            <p class="text-muted">Lead conversion</p>
+                        </div>
+                        <span class="material-icons-sharp success">trending_up</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <div class="bar conversion"></div>                               
+                            </div>
+                            <p>78%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 3 -->
+                <div class="card">
+                    <div class="top">
+                        <div class="amount">
+                            <h1>1,096</h1>
+                            <p class="text-muted">Campaign sent</p>
+                        </div>
+                        <span class="material-icons-sharp banana">send</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="progress">
+                            <div class="progress-bar">
+                                <div class="bar campaign"></div>
+                            </div>
+                            <p>85%</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD 4 -->
+            </div>
+            <!-- ----------------END OF ASIDE---------------- -->
+            <div class="insights">
+                <div class="insight">
+                    <div class="top">
+                        <div class="mail">
+                            <h3>Email Sent Total</h3>
+                            <p>March 2020</p>
+                        </div>
+                        <span class="material-icons-sharp">more_vert</span>
+                    </div>
+                    <div class="pie">
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+                    <div class="bottom">
+                        <div class="left">
+                            <div class="bg-primary"></div>
+                            <p>91 send</p>
+                        </div>
+                        <div class="left">
+                            <div class="bg-danger"></div>
+                            <p>161 open</p>
+                        </div>
+                        <div class="left">
+                            <div class="bg-success"></div>
+                            <p>28 spam</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF INSIGHT 1 -->
+                <div class="insight">
+                    <div class="top">
+                        <div class="income">
+                            <h3>Income Amounts</h3>
+                        </div>
+                        <span class="material-icons-sharp">more_vert</span>
+                    </div>
+                    <div class="bar">
+                        <canvas id="bar-chart"></canvas>
+                    </div>
+                    <div class="bottom">
+                        <div class="middle">
+                            <p>Target</p>
+                            <span class="material-icons-sharp success">arrow_drop_up</span>                            
+                        </div>
+                        <div class="middle">
+                            <p>Last week</p>
+                            <span class="material-icons-sharp danger">arrow_drop_down</span>                            
+                        </div>
+                        <div class="middle">
+                            <p>Last month</p>
+                            <span class="material-icons-sharp success">arrow_drop_up</span>                            
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF INSIGHT 2 -->
+                <div class="insight">
+                    <div class="tops">
+                        <div class="heading">
+                            <div class="revenue">
+                                <h3>Revenue</h3>
+                            </div>
+                            <span class="material-icons-sharp">more_vert</span>
+                        </div>
+                        <div class="amount">
+                            <h1>$198,089.25</h1>
+                            <p>Won from 178 Duels</p>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <h1>Canvas</h1>
+                        <canvas id="line-chart"></canvas>
+                    </div>
+                </div>
+                <!-- END OF INSIGHT 3 -->
+            </div>
+
+        </section>
+    </main>
     
 </body>
 </html>
