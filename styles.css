@@ -145,6 +145,10 @@ small {
     background: #27282f;
 }
 
+.bg-green {
+    background: #15616D;
+}
+
 .profile-photo {
     width: 2.5rem;
     height: 2.5rem;
@@ -335,7 +339,7 @@ main aside .sidebar a span.message {
 }
 
 main aside .sidebar a:last-child {
-    position: absolute;
+    position: fixed;
     bottom: 2rem;
     width: 100%;
 }
@@ -490,9 +494,10 @@ section.right .insights .insight {
     padding: var(--card-padding);
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
-    min-width: 22rem;
+    min-width: 24rem;
     background: var(--color-white);
     transition: all 300ms ease;
+    /* gap: 1rem; */
 }
 
 section.right .insights .insight:hover {
@@ -510,7 +515,7 @@ section.right .insights .insight h3 {
     font-weight: 600;
 }
 
-section.right .insights .insight .pie {
+section.right .insights .insight .doughnut {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -544,7 +549,24 @@ section.right .insight .bottom .middle {
     /* gap: 2rem; */
 }
 
+section.right .insight .bar {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;   
+}
+
+
+
+
 /* REVENUE */
+section.right .insight.revenue {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
 
 section.right .insight .tops {
     display: flex;
@@ -556,3 +578,88 @@ section.right .insight .tops .heading {
     display: flex;
     justify-content: space-between;
 }
+
+section.right .insight .line {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    align-items: center;   
+}
+
+/* -------------------PERFORMANCES------------------ */
+main section.right .performances {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.performances .top-performance .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: var(--card-padding) var(--card-padding) 0 var(--card-padding);
+    background: var(--color-white);
+    border-top-left-radius: var(--card-border-radius);
+    border-top-right-radius: var(--card-border-radius);
+}
+
+.performances .top-performance .top h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+main .performances table {
+    background: var(--color-white);
+    text-align: center;
+    padding: var(--card-padding);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+main .performances table:hover {
+    box-shadow: none;
+}
+
+main table tbody tr {
+    background: var(--color-white);
+    transition: all 300ms ease;
+}
+
+main table tbody tr:hover {
+    background: var(--color-light);
+}
+
+main table tbody td {
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody td.ref {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+table > tbody > tr > td > img {
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+

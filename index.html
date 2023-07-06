@@ -189,12 +189,12 @@
                     <div class="top">
                         <div class="mail">
                             <h3>Email Sent Total</h3>
-                            <p>March 2020</p>
+                            <p>March 2023</p>
                         </div>
                         <span class="material-icons-sharp">more_vert</span>
                     </div>
-                    <div class="pie">
-                        <canvas id="pie-chart"></canvas>
+                    <div class="doughnut">
+                        <canvas id="doughnut-chart"></canvas>
                     </div>
                     <div class="bottom">
                         <div class="left">
@@ -206,7 +206,7 @@
                             <p>161 open</p>
                         </div>
                         <div class="left">
-                            <div class="bg-success"></div>
+                            <div class="bg-green"></div>
                             <p>28 spam</p>
                         </div>
                     </div>
@@ -238,7 +238,7 @@
                     </div>
                 </div>
                 <!-- END OF INSIGHT 2 -->
-                <div class="insight">
+                <div class="insight revenue">
                     <div class="tops">
                         <div class="heading">
                             <div class="revenue">
@@ -252,15 +252,118 @@
                         </div>
                     </div>
                     <div class="line">
-                        <h1>Canvas</h1>
                         <canvas id="line-chart"></canvas>
                     </div>
                 </div>
                 <!-- END OF INSIGHT 3 -->
             </div>
+            <!-- -------------END OF INSIGHTS------------- -->
+            <div class="performances">
+                <div class="top-performance">
+                    <div class="top">
+                        <div class="heading">
+                            <h3>Top Performance</h3>
+                            <p>Last 2 weeks</p>
+                        </div>
+                        <span class="material-icons-sharp">more_vert</span>
+                    </div>
+
+                    <table>
+                        <thead>
+                             <tr>
+                                 <th>No</th>
+                                 <th>Ref</th>
+                                 <th>Leads</th>
+                                 <th>Deals</th>
+                                 <th>Tasks</th>
+                                 <th>Rate</th>
+                             </tr>
+                        </thead> 
+                        <tbody>
+                             <tr>
+                                 <td>1</td>
+                                 <td class="ref">
+                                    <img src="img/profile-1.jpg" alt="">
+                                    <div>
+                                        <h3>Kenny Carl</h3>
+                                        <p>$85,422</p>
+                                    </div>
+                                </td>
+                                 <td>200</td>
+                                 <td>208</td>
+                                 <td>28</td>
+                                 <td>100%</td>
+                             </tr>
+                             <tr>
+                                <td>2</td>
+                                <td class="ref">
+                                   <img src="img/profile-2.jpg" alt="">
+                                   <div>
+                                       <h3>Leone Den</h3>
+                                       <p>$50,476</p>
+                                   </div>
+                               </td>
+                                <td>170</td>
+                                <td>186</td>
+                                <td>25</td>
+                                <td>92%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="ref">
+                                   <img src="img/profile-3.jpg" alt="">
+                                   <div>
+                                       <h3>Haley Greg</h3>
+                                       <p>$24,658</p>
+                                   </div>
+                               </td>
+                                <td>186</td>
+                                <td>175</td>
+                                <td>16</td>
+                                <td>74%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td class="ref">
+                                   <img src="img/profile-4.jpg" alt="">
+                                   <div>
+                                       <h3>Karen Hue</h3>
+                                       <p>$20,568</p>
+                                   </div>
+                               </td>
+                                <td>178</td>
+                                <td>159</td>
+                                <td>12</td>
+                                <td>56%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="ref">
+                                   <img src="img/profile-5.webp" alt="">
+                                   <div>
+                                       <h3>Ling Chan</h3>
+                                       <p>$12,984</p>
+                                   </div>
+                               </td>
+                                <td>43</td>
+                                <td>132</td>
+                                <td>8</td>
+                                <td>40%</td>
+                            </tr>
+                        </tbody>
+                     </table>
+                    
+                </div>
+            </div>
 
         </section>
     </main>
+
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- JS file -->
+    <script src="script.js"></script>
+
     
 </body>
 </html>
