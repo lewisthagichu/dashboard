@@ -1,14 +1,9 @@
 # CRM Dashboard
-# [LIVE](https://www.theodinproject.com/)  
-
-
-
-
+# [LIVE](https://lewisthagichu.github.io/dashboard/)  
 
 * This project is a responsive CRM (Customer Relationship Management) dashboard that provides an intuitive interface to manage and track customer information, deals, and performance. 
 * It offers various features and visualizations to assist in monitoring sales, revenue, and campaign metrics.  
-* The project is part of [The Odin Project](https://lewisthagichu.github.io/dashboard/)<br />
-
+* The project is part of [The Odin Project](https://www.theodinproject.com/)<br />
 
 # Features
 **Navigation:** The top navigation bar allows easy access to different sections of the dashboard.  
