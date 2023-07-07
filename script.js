@@ -1,6 +1,12 @@
-const doughnutChart = document.getElementById("doughnut-chart");
+const doughnutChart = document
+  .getElementById("doughnut-chart")
+  .getContext("2d");
 const barChart = document.getElementById("bar-chart");
 const lineChart = document.getElementById("line-chart");
+const menuBtn = document.querySelector("#menu-btn");
+const closeBtn = document.querySelector("#close-btn");
+const sideBar = document.querySelector("aside");
+const themeBtn = document.querySelector(".theme-btn");
 
 new Chart(doughnutChart, {
   type: "doughnut",
@@ -19,7 +25,7 @@ new Chart(doughnutChart, {
     ],
   },
   options: {
-    // responsive: true,
+    responsive: true,
     plugins: {
       legend: {
         display: false,
@@ -146,4 +152,22 @@ new Chart(lineChart, {
       },
     },
   },
+});
+
+// Show sidebar menu
+menuBtn.addEventListener("click", () => {
+  sideBar.style.display = "block";
+});
+
+// Hide sidebar menu
+closeBtn.addEventListener("click", () => {
+  sideBar.style.display = "none";
+});
+
+// Change dark or light theme
+themeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  themeBtn.querySelector("span:first-child").classList.toggle("active");
+  themeBtn.querySelector("span:last-child").classList.toggle("active");
 });

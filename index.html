@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
 </head>
 <body>
     <nav>
@@ -37,7 +38,7 @@
                         <small class="text-muted">Admin</small>
                     </div>
                 </div>
-                <button class="menu">
+                <button id="menu-btn">
                     <span class="material-icons-sharp">menu</span>
                 </button>
             </div>
@@ -46,7 +47,7 @@
     <!-- --------------END OF NAV----------------- -->
     <main>
         <aside>
-            <div class="close-btn">
+            <div id="close-btn">
                 <span class="material-icons-sharp">close</span>
             </div>
 
@@ -351,14 +352,98 @@
                                 <td>40%</td>
                             </tr>
                         </tbody>
-                     </table>
+                     </table>                    
+                </div>
+                <!-- END OF TOP PERFORMANCERS -->
+                <div class="top-products">
+                    <div class="top">
+                        <h3>Top Products</h3>
+                        <span class="material-icons-sharp">more_vert</span>
+                    </div>
                     
+                    <div class="product">
+                        <div class="photo">
+                            <img src="img/watch-1.jpg">
+                            <div class="description">
+                                <h3>Digital Silicone Black</h3>
+                                <p>#3E38095</p>
+                            </div>
+                        </div>                        
+                        <div class="amount">
+                            <h3 class="primary">$1,436</h3>
+                            <p>7k Sale</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="photo">
+                            <img src="img/watch-2.jpg">
+                            <div class="description">
+                                <h3>Omega Seamaster Diver</h3>
+                                <p>#4F37893</p>
+                            </div>
+                        </div>
+                        
+                        <div class="amount">
+                            <h3 class="primary">$1,898</h3>
+                            <p>4k Sale</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="photo">
+                            <img src="img/watch-3.jpg">
+                            <div class="description">
+                                <h3>Audemar Piguet Oak</h3>
+                                <p>#1S78945</p>
+                            </div>
+                        </div>                        
+                        <div class="amount">
+                            <h3 class="primary">$1,875</h3>
+                            <p>3k Sale</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="photo">
+                            <img src="img/watch-4.jpg">
+                            <div class="description">
+                                <h3>Black Scone Dial</h3>
+                                <p>#8E25874</p>
+                            </div>
+                        </div>                        
+                        <div class="amount">
+                            <h3 class="primary">$3,458</h3>
+                            <p>2k Sale</p>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <div class="photo">
+                            <img src="img/watch-5.jpg">
+                            <div class="description">
+                                <h3>Nautilus Philippe Black</h3>
+                                <p>#AP95722</p>
+                            </div>
+                        </div>                       
+                        <div class="amount">
+                            <h3 class="primary">$4,578</h3>
+                            <p>1k Sale</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </section>
     </main>
-
+    <footer>
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            lewisthagichu
+            </p>
+            <a href="https://github.com/lewisthagichu" target="_blank">
+            <i class="fa-brands fa-github"></i
+            ></a>
+    </footer>
+  
     <!-- Chart.js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- JS file -->
